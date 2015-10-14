@@ -2,5 +2,4 @@
 bower_components
 node_modules
 .divshot-cache
-src/bourbon
-src/neat
+

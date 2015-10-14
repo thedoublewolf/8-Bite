@@ -1,12 +1,14 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
 .container {
 	width: 1000px;
-	margin: 0 auto;
+	margin: 10px auto;
 	border: 1px solid red;
 }
 header {
 	overflow: hidden;
 	width: 1000px;
-	margin: 0 auto;
 	.logo {
 		float: left;
 		width: 300px;
@@ -25,4 +27,39 @@ header {
 	width: 1000px;
 	height: 300px;
 	border: 1px solid red;
+}
+
+.stuff {
+	@include outer-container(100%);
+	.news {
+		@include span-columns(4);
+		height: 200px;
+		border: 1px solid red;
+	}
+		.special {
+		@include span-columns(4);
+		height: 200px;
+		border: 1px solid red;
+	}
+		.location {
+		@include span-columns(4);
+		height: 200px;
+		border: 1px solid red;
+	}
+}
+
+.content {
+	@include outer-container(100%);
+	ul {
+		@include span-columns(10);
+		border: 1px solid red;
+		.hidden {
+			display: none;
+		}
+	}
+	.photos {
+		@include span-columns(2);
+		border: 1px solid red;
+		height: 200px;
+	}
 }

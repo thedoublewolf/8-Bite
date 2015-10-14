@@ -1,12 +1,19 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
 .container {
   width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: 1px solid red; }
 
 header {
   overflow: hidden;
-  width: 1000px;
-  margin: 0 auto; }
+  width: 1000px; }
   header .logo {
     float: left;
     width: 300px;
@@ -22,3 +29,67 @@ header {
   width: 1000px;
   height: 300px;
   border: 1px solid red; }
+
+.stuff {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .stuff::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .stuff .news {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 200px;
+    border: 1px solid red; }
+    .stuff .news:last-child {
+      margin-right: 0; }
+  .stuff .special {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 200px;
+    border: 1px solid red; }
+    .stuff .special:last-child {
+      margin-right: 0; }
+  .stuff .location {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    height: 200px;
+    border: 1px solid red; }
+    .stuff .location:last-child {
+      margin-right: 0; }
+
+.content {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .content ul {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    border: 1px solid red; }
+    .content ul:last-child {
+      margin-right: 0; }
+    .content ul .hidden {
+      display: none; }
+  .content .photos {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    border: 1px solid red;
+    height: 200px; }
+    .content .photos:last-child {
+      margin-right: 0; }
