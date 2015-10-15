@@ -1,21 +1,18 @@
-(function () {
+// (function () {
 
-  /*let googleMapsURL = 'https://api.etsy.com/v2/listings/active.js?api_key=h9oq2yf3twf4ziejn10b717i&keywords=whiskey&includes=Images,Shop';
+// 	var promise = $.getJSON(url);
+// 	promise.then( function (response){
+// 		doSomething(response);
+// 	});
 
-$.ajax({
-  url: googleMapsURL,
-  dataType: 'jsonp',
-  method: 'get'
-}).then (function (response) {
-   var templateString = $('#item-template').text();
-  var renderTemplate = _.template(templateString);
-    _.each(response.results, function(item) {
-      var freshHTML = renderTemplate(item);
-      $('.location').append(freshHTML);
-//var template = $('#item-template').html();
-//var render = _.template(template);
+// 	var newsInput = _.template($('#generic-form').text());
 
-// $.getJSON('etsyURL').done( function (item) {
-//  $('.container').append( render(item) );*/
+// 	var doSomething = function (string){
 
-}());
+// 		_.each(string, function (news){
+
+// 		});
+
+// 	}
+
+// }());
