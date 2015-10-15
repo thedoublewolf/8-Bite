@@ -1,4 +1,5 @@
 
+
 // Pulling down the restaurant menu
 
 (function () {
@@ -74,3 +75,29 @@ console.log(template);
 $('.menu').append(template);
 }
 }());
+=======
+(function () {
+
+//News
+
+var template = $('#news').html();
+var render = _.template(template);
+
+$.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (news){
+	$('.news').append(render (news));
+});
+
+//Special
+
+var template2 = $('#special').html();
+var render2 = _.template(template2);
+
+$.getJSON('https://json-data.herokuapp.com/restaurant/special/1').done(function (special){
+	$('.special').append(render2 (special));
+});
+
+
+
+}());
+
+
