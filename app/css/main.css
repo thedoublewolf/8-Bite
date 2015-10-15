@@ -65,6 +65,14 @@ header {
     border: 1px solid red; }
     .stuff .location:last-child {
       margin-right: 0; }
+    .stuff .location .location h4 {
+      text-align: center;
+      font-weight: none; }
+    .stuff .location .location p {
+      text-align: center;
+      font-size: 8px; }
+    .stuff .location #map {
+      width: 100%; }
 
 .content {
   max-width: 100%;

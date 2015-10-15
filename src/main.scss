@@ -45,6 +45,21 @@ header {
 		@include span-columns(4);
 		height: 200px;
 		border: 1px solid red;
+
+		.location h4 {
+			text-align: center;
+			font-weight: none;
+		}
+
+		.location p {
+			text-align: center;
+			font-size: 8px;
+		}
+
+		#map {
+			width: 100%;
+
+		}
 	}
 }
 
