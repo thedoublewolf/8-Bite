@@ -6,10 +6,19 @@ html {
 *::before {
   box-sizing: inherit; }
 
+hr {
+  border: none;
+  border: 1px dotted #BBBBBB;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
 .container {
   width: 1000px;
-  margin: 30px auto;
-  border: 1px dotted lightgrey; }
+  margin: 30px auto; }
 
 header {
   overflow: hidden;
@@ -25,16 +34,16 @@ header {
     width: 300px;
     height: 100px;
     background-color: #eeeeee;
-    border: 1px dotted lightgrey; }
+    border: 1px solid #BBBBBB; }
 
 .banner {
   overflow: hidden;
-  width: 1000px;
-  border: 1px dotted lightgrey; }
+  width: 1000px; }
   .banner img {
     width: 1000px; }
 
 .stuff {
+  margin-top: 12px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
@@ -48,7 +57,9 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    border: 1px solid #BBBBBB;
+    border: 1px solid #BBBBBB; }
     .stuff .news:last-child {
       margin-right: 0; }
   .stuff .special {
@@ -57,7 +68,8 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    border: 1px solid #BBBBBB; }
     .stuff .special:last-child {
       margin-right: 0; }
   .stuff .location {
@@ -66,7 +78,8 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    background-color: #eeeeee; }
+    background-color: #eeeeee;
+    border: 1px solid #BBBBBB; }
     .stuff .location:last-child {
       margin-right: 0; }
 
@@ -82,8 +95,9 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 82.94039%;
-    background-color: #eeeeee; }
+    width: 74.41059%;
+    background-color: #eeeeee;
+    border: 1px solid #BBBBBB; }
     .content ul:last-child {
       margin-right: 0; }
     .content ul .hidden {
@@ -92,8 +106,14 @@ header {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 14.70196%;
+    width: 23.23176%;
     background-color: #eeeeee;
-    height: 200px; }
+    border: 1px solid #BBBBBB;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: 100px; }
     .content .photos:last-child {
       margin-right: 0; }
+
+.copyright {
+  font-size: 0.7em; }
