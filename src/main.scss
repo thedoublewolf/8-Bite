@@ -72,6 +72,29 @@ header {
 		.location {
 		@include span-columns(4);
 		height: 200px;
+		border: 1px solid red;
+
+		#resAddr {
+			text-align: center;
+			font-size: 12px;
+		}
+
+		#telFax {
+			text-align: center;
+			font-size: 12px;
+
+		}
+
+		#map {
+			border: 1px solid $lightgrey;
+			width: 280px;
+			height: 90px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		
+
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 	}
