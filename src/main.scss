@@ -20,22 +20,27 @@ header {
 		float: left;
 		width: 300px;
 		img {
+			padding-top: 15px;
 			width: 400px;
-
 		}
 	}
 	.socialmedia {
 		float: right;
 		width: 300px;
+		height: 100px;
+		background-color: lighten($lightgrey, 20%);
 
 	border: 1px dotted lightgrey;
 	}
 }
 
 .banner {
+	overflow: hidden;
 	width: 1000px;
-	height: 300px;
 	border: 1px dotted lightgrey;
+	img {
+		width: 1000px;
+	}
 }
 
 .stuff {
@@ -43,17 +48,17 @@ header {
 	.news {
 		@include span-columns(4);
 		height: 200px;
-	border: 1px dotted lightgrey;
+		background-color: lighten($lightgrey, 20%);
 	}
 		.special {
 		@include span-columns(4);
 		height: 200px;
-	border: 1px dotted lightgrey;
+		background-color: lighten($lightgrey, 20%);
 	}
 		.location {
 		@include span-columns(4);
 		height: 200px;
-	border: 1px dotted lightgrey;
+		background-color: lighten($lightgrey, 20%);
 	}
 }
 
@@ -61,14 +66,14 @@ header {
 	@include outer-container(100%);
 	ul {
 		@include span-columns(10);
-	border: 1px dotted lightgrey;
+		background-color: lighten($lightgrey, 20%);
 		.hidden {
 			display: none;
 		}
 	}
 	.photos {
 		@include span-columns(2);
-	border: 1px dotted lightgrey;
+		background-color: lighten($lightgrey, 20%);
 		height: 200px;
 	}
 }
