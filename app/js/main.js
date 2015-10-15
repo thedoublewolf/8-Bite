@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use strict';
 
 (function () {
@@ -36,6 +35,3 @@
 	// 	})
 	// });
 })();
-=======
-"use strict";
->>>>>>> bdc02aa1672b759d487d93bb9b463efc391cea11

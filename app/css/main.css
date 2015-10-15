@@ -36,13 +36,16 @@ header {
       width: 400px; }
   header .socialmedia {
     float: right;
-    width: 300px;
+    width: 250px;
     height: 100px;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
+    border: 1px solid #BBBBBB;
+    text-align: center; }
     header .socialmedia li {
       display: inline-block;
-      color: #C63D10; }
+      color: #C63D10;
+      font-size: 3em;
+      padding: 10px; }
 
 .banner {
   overflow: hidden;

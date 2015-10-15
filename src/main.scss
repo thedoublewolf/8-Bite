@@ -43,13 +43,16 @@ header {
 	}
 	.socialmedia {
 		float: right;
-		width: 300px;
+		width: 250px;
 		height: 100px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
+		text-align: center;
 		li {
 			display: inline-block;
 			color: $redorange;
+			font-size: 3em;
+			padding: 10px;
 		}
 	}
 }
