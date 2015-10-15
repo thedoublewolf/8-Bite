@@ -1,3 +1,4 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
 html {
   box-sizing: border-box; }
 
@@ -5,6 +6,10 @@ html {
 *::after,
 *::before {
   box-sizing: inherit; }
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif; }
 
 hr {
   border: none;
@@ -31,10 +36,16 @@ header {
       width: 400px; }
   header .socialmedia {
     float: right;
-    width: 300px;
+    width: 250px;
     height: 100px;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
+    border: 1px solid #BBBBBB;
+    text-align: center; }
+    header .socialmedia li {
+      display: inline-block;
+      color: #C63D10;
+      font-size: 3em;
+      padding: 10px; }
 
 .banner {
   overflow: hidden;
@@ -52,6 +63,7 @@ header {
     content: "";
     display: table; }
   .stuff .news {
+    overflow: scroll;
     float: left;
     display: block;
     margin-right: 2.35765%;

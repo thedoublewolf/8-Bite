@@ -1,5 +1,11 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
 
 //cool colors
 $darkgrey: #3B3738;
@@ -37,11 +43,17 @@ header {
 	}
 	.socialmedia {
 		float: right;
-		width: 300px;
+		width: 250px;
 		height: 100px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
-
+		text-align: center;
+		li {
+			display: inline-block;
+			color: $redorange;
+			font-size: 3em;
+			padding: 10px;
+		}
 	}
 }
 
@@ -57,6 +69,7 @@ header {
 	margin-top: 12px;
 	@include outer-container(100%);
 	.news {
+		overflow: scroll;
 		@include span-columns(4);
 		height: 200px;
 		background-color: lighten($lightgrey, 20%);

@@ -20,7 +20,11 @@
   	<header>
   		<div class="logo"><img src="images/8bitburger.png"></div>
   		<div class="socialmedia">
-  		SOCIAL MEDIA
+  		  <ul>
+          <li class="brandico-facebook"></li>
+          <li class="brandico-twitter-bird"></li>
+          <li class="brandico-instagram"></li>
+        </ul>
   		</div>
   	</header>
   	<hr>
@@ -29,13 +33,16 @@
   	</banner>
 
   	<div class="stuff">
-  		<div class="news">
-
-  		</div>
-
+      <div class="news">
+        <script type="text/template" id="news">
+          <p><%= title %></p>
+          <p><%= date_published %></p>
+          <p><%= post %></p>
+        </script>
+      </div>
   		<div class="special">
-  		Today's Special
-      <hr>
+        <script type="text/template" id="special">
+        </script>
   		</div>
   		<div class="location">
   		<Our Location>
@@ -64,6 +71,7 @@
 
   	<div class="content">
   		<ul>
+
 	  		<li class="story">
 	  		<h2>Our Story</h2>
         <p>We all grew up in relative poverty, well all of us except for Jef. Jef was the only one who could afford a video game console so we all gathered at his place to enjoy ourselves. A couple rounds would turn in to hours and we would grow hungry from our adventures in to the virtual realm. Thats when the lightbulb sparked over our heads and the first ideas of a meeting place to eat, drink and game came to be. Thanks to the resources of Generous Jef this idea became a reality.</p>
@@ -71,9 +79,13 @@
         <p>Four different people from four different backgrounds, we were brought together by the common love for gaming. Gaming isn't just an activity, it is an experience; and like any other experience, the gaming experience is only enhanced by good food and drinks. Danny, Hyona, Jef, and Jonny presents to you: 8-Bite!</p>
 
 
+
+	  		<li class="story hidden">
+	  		story
+
 	  		</li>
-	  		<li class="menu hidden">
-	  		menu
+	  		<li class="menu">
+        menu
 	  		</li>
 
 	  		<li class="reservations hidden">
