@@ -1,7 +1,5 @@
 // (function () {
 
-// 	var newsURL = 'https://json-data.herokuapp.com/restaurant/news/1';
-
 // 	var promise = $.getJSON(url);
 // 	promise.then( function (response){
 // 		doSomething(response);
