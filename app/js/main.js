@@ -1,6 +1,8 @@
 'use strict';
 
-(function () {
+var pubUrl = 'https://json-data.herokuapp.com/restaurant/menu/3';
 
-  console.log('It Works!');
-})();
+var promise = $.getJSON(pubUrl);
+promise.then(function (response) {
+  console.log(response);
+});
