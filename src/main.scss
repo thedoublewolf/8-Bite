@@ -1,10 +1,17 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+//cool colors
+$darkgrey: #3B3738;
+$offwhite: #FDF3E7;
+$midgrey: #454545;
+$lightgrey: #BBBBBB;
+$redorange: #C63D10;
+
 .container {
 	width: 1000px;
-	margin: 10px auto;
-	border: 1px solid red;
+	margin: 30px auto;
+	border: 1px dotted lightgrey;
 }
 header {
 	overflow: hidden;
@@ -12,23 +19,23 @@ header {
 	.logo {
 		float: left;
 		width: 300px;
-		border: 1px solid red;
 		img {
-			width: 200px;
+			width: 400px;
+
 		}
 	}
 	.socialmedia {
 		float: right;
 		width: 300px;
-		height: 100px;
-		border: 1px solid red;
+
+	border: 1px dotted lightgrey;
 	}
 }
 
 .banner {
 	width: 1000px;
 	height: 300px;
-	border: 1px solid red;
+	border: 1px dotted lightgrey;
 }
 
 .stuff {
@@ -36,17 +43,17 @@ header {
 	.news {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+	border: 1px dotted lightgrey;
 	}
 		.special {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+	border: 1px dotted lightgrey;
 	}
 		.location {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+	border: 1px dotted lightgrey;
 	}
 }
 
@@ -54,14 +61,14 @@ header {
 	@include outer-container(100%);
 	ul {
 		@include span-columns(10);
-		border: 1px solid red;
+	border: 1px dotted lightgrey;
 		.hidden {
 			display: none;
 		}
 	}
 	.photos {
 		@include span-columns(2);
-		border: 1px solid red;
+	border: 1px dotted lightgrey;
 		height: 200px;
 	}
 }

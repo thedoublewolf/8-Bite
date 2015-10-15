@@ -8,28 +8,26 @@ html {
 
 .container {
   width: 1000px;
-  margin: 10px auto;
-  border: 1px solid red; }
+  margin: 30px auto;
+  border: 1px dotted lightgrey; }
 
 header {
   overflow: hidden;
   width: 1000px; }
   header .logo {
     float: left;
-    width: 300px;
-    border: 1px solid red; }
+    width: 300px; }
     header .logo img {
-      width: 200px; }
+      width: 400px; }
   header .socialmedia {
     float: right;
     width: 300px;
-    height: 100px;
-    border: 1px solid red; }
+    border: 1px dotted lightgrey; }
 
 .banner {
   width: 1000px;
   height: 300px;
-  border: 1px solid red; }
+  border: 1px dotted lightgrey; }
 
 .stuff {
   max-width: 100%;
@@ -45,7 +43,7 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    border: 1px solid red; }
+    border: 1px dotted lightgrey; }
     .stuff .news:last-child {
       margin-right: 0; }
   .stuff .special {
@@ -54,7 +52,7 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    border: 1px solid red; }
+    border: 1px dotted lightgrey; }
     .stuff .special:last-child {
       margin-right: 0; }
   .stuff .location {
@@ -63,7 +61,7 @@ header {
     margin-right: 2.35765%;
     width: 31.76157%;
     height: 200px;
-    border: 1px solid red; }
+    border: 1px dotted lightgrey; }
     .stuff .location:last-child {
       margin-right: 0; }
 
@@ -80,7 +78,7 @@ header {
     display: block;
     margin-right: 2.35765%;
     width: 82.94039%;
-    border: 1px solid red; }
+    border: 1px dotted lightgrey; }
     .content ul:last-child {
       margin-right: 0; }
     .content ul .hidden {
@@ -90,7 +88,7 @@ header {
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
-    border: 1px solid red;
+    border: 1px dotted lightgrey;
     height: 200px; }
     .content .photos:last-child {
       margin-right: 0; }
