@@ -70,9 +70,49 @@
 	  		<li class="menu hidden">
 	  		menu
 	  		</li>
-	  		<li class="reservations hidden">
-	  		reservation
-	  		</li>
+
+	  		<li class="reservations">
+	  		Reservation
+          <form class='reservation'>
+            <div>
+              <label for='name'>Name:</label>
+              <br>
+              <input type='text' id='name'/>
+            </div>
+            <br>
+            <div>
+              <label for='guests'>Number of Guests:</label>
+              <br>
+              <input type='num' id='guests'/>
+            </div>
+            <br>
+            <div>
+              <label for='date'>Date:</label>
+              <br>
+              <input type='text' id='guests'/>
+            </div>
+            <br>
+            <div>
+              <label for='notes'>Special Notes:</label>
+              <br>
+              <input type='text' id='notes'/>
+            </div>
+            <br>
+            <div>
+              <label for='preference'>Seating Preference</label>
+              <br>
+              <select name='select'>
+                <option value='indoor'>Indoor</option>
+                <option value='outdoor'>Outdoor</option>
+              </select>
+            </div>
+            <br>
+            <div class='button'>
+              <button type='submit'>Reserve Table</button>
+            </div>
+          </form>
+        </li>
+
 	  		<li class="review hidden">
 	  		review
 	  		</li>
