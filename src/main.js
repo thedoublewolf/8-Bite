@@ -1,20 +1,38 @@
-// (function () {
+(function () {
 
-// 	var newsURL = 'https://json-data.herokuapp.com/restaurant/news/1';
+//News
 
-// 	var promise = $.getJSON(url);
-// 	promise.then( function (response){
-// 		doSomething(response);
-// 	});
+var template = $('#news').html();
+var render = _.template(template);
 
-// 	var newsInput = _.template($('#generic-form').text());
+$.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (news){
+	$('.news').append(render (news));
+});
 
-// 	var doSomething = function (string){
+//Special
 
-// 		_.each(string, function (news){
+var template2 = $('#special').html();
+var render2 = _.template(template2);
 
-// 		});
+$.getJSON('https://json-data.herokuapp.com/restaurant/special/1').done(function (special){
+	$('.special').append(render2 (special));
+});
 
-// 	}
+//Menu
 
-// }());
+// var templateMenu = $('#menu').html();
+// var renderMenu = _.template(templateMenu);
+
+// $.getJSON('https://json-data.herokuapp.com/restaurant/menu/3').then(function (menu){
+// 	// $('.menu').append(renderMenu (menu));
+// 	console.log(menu.Beer);
+// 	_.each(menu.Beer, function (beerItem){
+// 		var beerItemHTML = renderMenu(beerItem);
+// 		$('.menu').append(itemHTML);
+// 		console.log(itemHTML);
+// 	})
+// });
+
+
+
+}());
