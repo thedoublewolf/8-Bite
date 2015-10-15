@@ -1,10 +1,28 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
+//cool colors
+$darkgrey: #3B3738;
+$offwhite: #FDF3E7;
+$midgrey: #454545;
+$lightgrey: #BBBBBB;
+$redorange: #C63D10;
+
+hr {
+	border: none;
+	border: 1px dotted $lightgrey;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
 .container {
 	width: 1000px;
-	margin: 10px auto;
-	border: 1px solid red;
+	margin: 30px auto;
 }
 header {
 	overflow: hidden;
@@ -12,54 +30,72 @@ header {
 	.logo {
 		float: left;
 		width: 300px;
-		height: 100px;
-		border: 1px solid red;
+		img {
+			padding-top: 15px;
+			width: 400px;
+		}
 	}
 	.socialmedia {
 		float: right;
 		width: 300px;
 		height: 100px;
-		border: 1px solid red;
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
+
 	}
 }
 
 .banner {
+	overflow: hidden;
 	width: 1000px;
-	height: 300px;
-	border: 1px solid red;
+	img {
+		width: 1000px;
+	}
 }
 
 .stuff {
+	margin-top: 12px;
 	@include outer-container(100%);
 	.news {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
+		border: 1px solid $lightgrey;
 	}
 		.special {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
 	}
 		.location {
 		@include span-columns(4);
 		height: 200px;
-		border: 1px solid red;
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
 	}
 }
 
 .content {
 	@include outer-container(100%);
 	ul {
-		@include span-columns(10);
-		border: 1px solid red;
+		@include span-columns(9);
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
 		.hidden {
 			display: none;
 		}
 	}
 	.photos {
-		@include span-columns(2);
-		border: 1px solid red;
+		@include span-columns(3);
+		background-color: lighten($lightgrey, 20%);
+		border: 1px solid $lightgrey;
 		height: 200px;
+		margin-top: 15px;
+		margin-bottom: 100px;
 	}
+}
+.copyright {
+		font-size: 0.7em;
 }
