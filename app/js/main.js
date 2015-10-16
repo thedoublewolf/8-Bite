@@ -77,7 +77,6 @@
   var specialURL = 'https://json-data.herokuapp.com/restaurant/special/1';
   var menuURL = 'https://json-data.herokuapp.com/restaurant/menu/3';
 
-  // create a promise object for each url
   var specialPromise = $.getJSON(specialURL);
   var menuPromise = $.getJSON(menuURL);
 

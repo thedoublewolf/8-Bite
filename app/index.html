@@ -34,6 +34,8 @@
 
   	<div class="stuff">
       <div class="news">
+      <p class="title">Latest News</p>
+      <hr>
         <script type="text/template" id="news">
           <p><%= title %></p>
           <p><%= date_published %></p>
@@ -41,10 +43,12 @@
         </script>
       </div>
   		<div class="special">
+      <p class="title">Today's Special</p>
+      <hr>
   		</div>
   		<div class="location">
   		<Our Location>
-      Our Location
+      <p class="title">Our Location</p>
       <hr>
         <!-- Add Google Maps -->
           <div id="map">
@@ -72,7 +76,7 @@
 	  		<li class="story hidden">
 	  		story
 	  		</li>
-	  		<li class="menu">
+	  		<li class="menu hidden">
         menu
 	  		</li>
 
@@ -118,8 +122,22 @@
           </form>
         </li>
 
-	  		<li class="review hidden">
-	  		review
+	  		<li class="review">
+        <h4>Tell us about your experience!</h4>
+        <p>At 8-Bite, we are always open to suggestions that will make our pub more enjoyable. Tell us what games you'd like to play, what menu items you hate, or just how much you love us!</p>
+	  		<div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES * * */
+              var disqus_shortname = '8-bite';
+              
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 	  		</li>
   		</ul>
 

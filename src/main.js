@@ -90,7 +90,6 @@ $.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (ne
 var specialURL = 'https://json-data.herokuapp.com/restaurant/special/1';
 var menuURL = 'https://json-data.herokuapp.com/restaurant/menu/3';
 
-// create a promise object for each url
 var specialPromise = $.getJSON(specialURL);
 var menuPromise = $.getJSON(menuURL);
 
@@ -98,7 +97,7 @@ var arrMenu = [];
 var specialId;
 var specialMenuItem = {};
 
-specialPromise.then( function(specialObject){
+specialPromise.then( function (specialObject){
 
   specialId = specialObject.menu_item_id;
   return specialId;

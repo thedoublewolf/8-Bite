@@ -63,33 +63,39 @@ header {
     content: "";
     display: table; }
   .stuff .news {
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: scroll;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB;
     border: 1px solid #BBBBBB; }
     .stuff .news:last-child {
       margin-right: 0; }
   .stuff .special {
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB; }
     .stuff .special:last-child {
       margin-right: 0; }
   .stuff .location {
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     border: 1px solid red;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB; }

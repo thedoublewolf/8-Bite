@@ -69,22 +69,28 @@ header {
 	margin-top: 12px;
 	@include outer-container(100%);
 	.news {
+		padding-left: 10px;
+		padding-right: 10px;
 		overflow: scroll;
 		@include span-columns(4);
-		height: 200px;
+		height: 225px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 		border: 1px solid $lightgrey;
 	}
 		.special {
+		padding-left: 10px;
+		padding-right: 10px;
 		@include span-columns(4);
-		height: 200px;
+		height: 225px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 	}
 		.location {
+		padding-left: 10px;
+		padding-right: 10px;
 		@include span-columns(4);
-		height: 200px;
+		height: 225px;
 		border: 1px solid red;
 
 		#resAddr {
