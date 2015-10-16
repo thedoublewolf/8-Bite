@@ -11,7 +11,7 @@
         height: 100px;
       }
     </style>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>  
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 
@@ -34,6 +34,8 @@
 
   	<div class="stuff">
       <div class="news">
+      <p class="title">Latest News</p>
+      <hr>
         <script type="text/template" id="news">
           <p><%= title %></p>
           <p><%= date_published %></p>
@@ -41,12 +43,12 @@
         </script>
       </div>
   		<div class="special">
-        <script type="text/template" id="special">
-        </script>
+      <p class="title">Today's Special</p>
+      <hr>
   		</div>
   		<div class="location">
   		<Our Location>
-      Our Location
+      <p class="title">Our Location</p>
       <hr>
         <!-- Add Google Maps -->
           <div id="map">
@@ -65,57 +67,100 @@
           </div>
       <p id="resAddr">481 Flat Shoals Ave. SE, Atlanta, GA 30316</p>
       <p id="telFax">404-522-0877 &bull; 404-522-0878 &bull; Map &bull; Directions</p>
-  		
+
       </div>
   	</div>
 
   	<div class="content">
-  		
-        <div class="tabs"></div>
-	  		<li class="tabs story">Story</li>
-	  		<li class="tabs menu">Menu</li>
-        <li class="tabs reservations">Reservation
-          <form class='reservation'>
-            <div>
-              <label for='name'>Name:</label>
+
+      <div class="tabContainer">
+    	<section>
+        <h2 class='header1'>Our Story</h2>
+        <h2 class='header2'>Menu</h2>
+        <h2 class='header3'>Reservation</h2>
+        <h2 class='header4'>Review</h2>
+      </section>
+
+        <section>
+    	  	<div id="tab1" class='open'>
+            <p>We all grew up in relative poverty, well all of us except for Jef. Jef was the only one who could afford a video game console so we all gathered at his place to enjoy ourselves. A couple rounds would turn in to hours and we would grow hungry from our adventures into the virtual realm. Thats when the lightbulb sparked over our heads and the first ideas of a meeting place to eat, drink and game came to be. Thanks to the resources of Generous Jef this idea became a reality.
+            <img src='images/storypic.jpg'>
+            Four different people from four different backgrounds, we were brought together by the common love for gaming. Gaming isn't just an activity, it is an experience; and like any other experience, the gaming experience is only enhanced by good food and drinks. Danny, Hyona, Jef, and Jonny presents to you: 8-Bite!</p>
+        </div>
+        </section>
+
+        <section>
+        
+        <div id="tab2" class='close'>
+            <p class='menu'></p>
+        </div>
+        </section>
+
+        <section>
+          
+          <div id="tab3" class='close'>
+            <form class='closeTab reservation'>
+              <div>
+                <label for='name'>Name:</label>
+                <br>
+                <input type='text' id='name'/>
+              </div>
               <br>
-              <input type='text' id='name'/>
-            </div>
-            <br>
-            <div>
-              <label for='guests'>Number of Guests:</label>
+              <div>
+                <label for='guests'>Number of Guests:</label>
+                <br>
+                <input type='num' id='guests'/>
+              </div>
               <br>
-              <input type='num' id='guests'/>
-            </div>
-            <br>
-            <div>
-              <label for='date'>Date:</label>
+              <div>
+                <label for='date'>Date:</label>
+                <br>
+                <input type='text' id='guests'/>
+              </div>
               <br>
-              <input type='text' id='guests'/>
-            </div>
-            <br>
-            <div>
-              <label for='notes'>Special Notes:</label>
+              <div>
+                <label for='notes'>Special Notes:</label>
+                <br>
+                <input type='text' id='notes'/>
+              </div>
               <br>
-              <input type='text' id='notes'/>
-            </div>
-            <br>
-            <div>
-              <label for='preference'>Seating Preference</label>
+              <div>
+                <label for='preference'>Seating Preference</label>
+                <br>
+                <select name='select'>
+                  <option value='indoor'>Indoor</option>
+                  <option value='outdoor'>Outdoor</option>
+                </select>
+              </div>
               <br>
-              <select name='select'>
-                <option value='indoor'>Indoor</option>
-                <option value='outdoor'>Outdoor</option>
-              </select>
-            </div>
-            <br>
-            <div class='button'>
-              <button type='submit'>Reserve Table</button>
-            </div>
-          </form>
-        </li>
-        <li class="tabs review">Review</li>
-  		</ul>
+              <div class='button'>
+                <button type='submit'>Reserve Table</button>
+              </div>
+            </form>
+        </div>
+
+          <section>
+            
+            <div id="tab4" class='close'>
+            <h4 class='closeTab'>Tell us about your experience!</h4>
+              <p class='closeTab'>At 8-Bite, we are always open to suggestions that will make our pub more enjoyable. Tell us what games you'd like to play, what menu items you hate, or just how much you love us!</p>
+              <div id="disqus_thread" class='closeTab'></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = '8-bite';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          </section>
+	  </div>
+	  	
   		<div class="photos">
   		Food Photos
   		</div>

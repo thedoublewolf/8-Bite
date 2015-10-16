@@ -63,33 +63,39 @@ header {
     content: "";
     display: table; }
   .stuff .news {
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: scroll;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB;
     border: 1px solid #BBBBBB; }
     .stuff .news:last-child {
       margin-right: 0; }
   .stuff .special {
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB; }
     .stuff .special:last-child {
       margin-right: 0; }
   .stuff .location {
+    padding-left: 10px;
+    padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 200px;
+    height: 225px;
     border: 1px solid red;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB; }
@@ -116,27 +122,50 @@ header {
     clear: both;
     content: "";
     display: table; }
-  .content ul {
+  .content .tabContainer {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
-    .content ul:last-child {
+    display: inline; }
+    .content .tabContainer:last-child {
       margin-right: 0; }
-    .content ul .showTab {
-      height: 200px;
-      margin: 20px 20px 0 20px;
-      padding: 0;
-      overflow: hidden;
-      transition: all 0.5s ease; }
-    .content ul .closeTab {
-      height: 0px;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-      transition: all 0.5s ease; }
+    .content .tabContainer h2.header1 {
+      border: 1px solid #E0E0E0;
+      border-top: none;
+      border-left: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header2 {
+      border: 1px solid #E0E0E0;
+      border-bottom: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header3 {
+      border: 1px solid #E0E0E0;
+      border-bottom: none;
+      width: 151px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header4 {
+      border: 1px solid #E0E0E0;
+      border-top: none;
+      border-right: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer .open {
+      display: inline;
+      width: 100%; }
+    .content .tabContainer .close {
+      display: none; }
   .content .photos {
     float: left;
     display: block;
