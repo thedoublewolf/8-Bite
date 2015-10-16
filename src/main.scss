@@ -119,8 +119,22 @@ header {
 		@include span-columns(9);
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
-		.hidden {
-			display: none;
+		// .hidden {
+		// 	display: none;
+		// }
+		.showTab {
+		  height: 200px;
+		  margin: 20px 20px 0 20px;
+		  padding: 0;
+		  overflow: hidden;
+		  transition: all 0.5s ease;
+		}
+		.closeTab {
+		  height: 0px;
+		  overflow: hidden;
+		  margin: 0;
+		  padding: 0;
+		  transition: all 0.5s ease;
 		}
 	}
 	.photos {

@@ -125,8 +125,18 @@ header {
     border: 1px solid #BBBBBB; }
     .content ul:last-child {
       margin-right: 0; }
-    .content ul .hidden {
-      display: none; }
+    .content ul .showTab {
+      height: 200px;
+      margin: 20px 20px 0 20px;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.5s ease; }
+    .content ul .closeTab {
+      height: 0px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      transition: all 0.5s ease; }
   .content .photos {
     float: left;
     display: block;

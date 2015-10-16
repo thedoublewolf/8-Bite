@@ -75,7 +75,7 @@ console.log(template);
 $('.menu').append(template);
 }
 }());
-=======
+
 (function () {
 
 //News
@@ -100,4 +100,11 @@ $.getJSON('https://json-data.herokuapp.com/restaurant/special/1').done(function 
 
 }());
 
+( function () {
+$('.tabs').on('click', 'li', function (event) {
+  var newTab = $(this);
+  newTab.siblings().addClass('showTab').removeClass('closeTab');
+  newTab.parent().siblings().find(".showTab").removeClass('showTab').addClass('closeTab');
+})
 
+}());
