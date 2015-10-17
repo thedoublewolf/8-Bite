@@ -122,16 +122,49 @@ header {
     clear: both;
     content: "";
     display: table; }
-  .content ul {
+  .content .tabContainer {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
-    .content ul:last-child {
+    display: inline; }
+    .content .tabContainer:last-child {
       margin-right: 0; }
-    .content ul .hidden {
+    .content .tabContainer h2.header1 {
+      border: 1px solid #E0E0E0;
+      border-top: none;
+      border-left: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header2 {
+      border: 1px solid #E0E0E0;
+      border-bottom: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header3 {
+      border: 1px solid #E0E0E0;
+      border-bottom: none;
+      width: 151px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header4 {
+      border: 1px solid #E0E0E0;
+      border-top: none;
+      border-right: none;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer .open {
+      display: inline;
+      width: 100%; }
+    .content .tabContainer .close {
       display: none; }
   .content .photos {
     float: left;

@@ -132,4 +132,31 @@ menuPromise.then( function(menuObject){
 
 }());
 
+$('.header1').on('click', function (){
+    $('#tab1').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab3').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+});
+
+$('.header2').on('click', function (){
+    $('#tab2').removeClass('close').addClass('open');
+    $('#tab3').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+});
+
+$('.header3').on('click', function (){
+    $('#tab3').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+}); 
+$('.header4').on('click', function (){
+    $('#tab4').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab3').removeClass('open').addClass('close');
+}); 
+
 
