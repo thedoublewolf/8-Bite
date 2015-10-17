@@ -76,6 +76,19 @@ header {
     border: 1px solid #BBBBBB; }
     .stuff .news:last-child {
       margin-right: 0; }
+    .stuff .news .subTitle {
+      display: inline-block;
+      font-size: 0.8em;
+      font-style: italic;
+      font-weight: bold; }
+    .stuff .news .date {
+      display: inline-block;
+      font-size: 0.8em;
+      margin-left: 50px;
+      font-style: italic;
+      font-weight: bold; }
+    .stuff .news .post {
+      font-size: 0.8em; }
   .stuff .special {
     padding-left: 10px;
     padding-right: 10px;
@@ -85,9 +98,30 @@ header {
     width: 31.76157%;
     height: 225px;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
+    border: 1px solid #BBBBBB;
+    overflow: hidden; }
     .stuff .special:last-child {
       margin-right: 0; }
+    .stuff .special .specialImage {
+      height: 70px;
+      background-image: url(../app/images/Sea_scallops.jpg);
+      background-size: cover;
+      overflow: hidden;
+      font-family: helvetica; }
+    .stuff .special .specialItem {
+      display: inline-block;
+      font-size: 0.8em;
+      font-style: italic;
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .stuff .special .specialItem:after {
+      content: " ..................................................................................................."; }
+    .stuff .special .specialPrice {
+      display: inline-block;
+      font-size: 0.8em;
+      margin-left: 50px; }
   .stuff .location {
     padding-left: 10px;
     padding-right: 10px;

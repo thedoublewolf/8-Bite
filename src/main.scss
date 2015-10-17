@@ -77,6 +77,22 @@ header {
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 		border: 1px solid $lightgrey;
+		.subTitle {
+			display: inline-block;
+			font-size: 0.8em;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.date {
+			display: inline-block;
+			font-size: 0.8em;
+			margin-left: 50px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.post {
+			font-size: 0.8em;
+		}
 	}
 		.special {
 		padding-left: 10px;
@@ -85,6 +101,31 @@ header {
 		height: 225px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
+		overflow: hidden;
+			.specialImage {
+				height: 70px;
+				background-image: url(../app/images/Sea_scallops.jpg);
+				background-size: cover;
+				overflow: hidden;
+				font-family: helvetica;
+			}
+			.specialItem {
+				display: inline-block;
+				font-size: 0.8em;
+				font-style: italic;
+				font-weight: bold;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.specialItem:after {
+  			content: " ..................................................................................................."
+			}
+			.specialPrice {
+				display: inline-block;
+				font-size: 0.8em;
+				margin-left: 50px;
+			}
 	}
 		.location {
 		padding-left: 10px;
