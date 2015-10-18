@@ -98,7 +98,7 @@
 
     specialMenuItem = _.findWhere(arrMenu, { id: specialId });
 
-    var specialBlock = '\n  <p class="specialItem">' + specialMenuItem.item + '</p>\n  <p class="specialPrice">' + specialMenuItem.price + '</p>\n  <p class="specialDescr">' + specialMenuItem.description + '</p>';
+    var specialBlock = '\n  <div class="specialGroup"><p class="specialItem">' + specialMenuItem.item + '</p>\n  <p class="specialPrice">' + specialMenuItem.price + '</p></div>\n  <p class="specialDescr">' + specialMenuItem.description + '</p>';
 
     $('.special').append(specialBlock);
   });

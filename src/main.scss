@@ -70,21 +70,24 @@ header {
 	margin-top: 12px;
 	@include outer-container(100%);
 	.news {
+		color: $darkgrey;
 		padding-left: 10px;
 		padding-right: 10px;
 		overflow: scroll;
 		@include span-columns(4);
-		height: 225px;
+		height: 235px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 		border: 1px solid $lightgrey;
 		.subTitle {
+			color: $redorange;
 			display: inline-block;
 			font-size: 0.8em;
 			font-style: italic;
 			font-weight: bold;
 		}
 		.date {
+			color: $redorange;
 			display: inline-block;
 			font-size: 0.8em;
 			margin-left: 50px;
@@ -96,43 +99,53 @@ header {
 		}
 	}
 		.special {
+		color: $darkgrey;
 		padding-left: 10px;
 		padding-right: 10px;
 		@include span-columns(4);
-		height: 225px;
+		height: 235px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 		overflow: hidden;
 			.specialImage {
-				height: 70px;
-				background-image: url(../app/images/Sea_scallops.jpg);
+				height: 75px;
+				background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Sea_scallops_%C2%A9_RGI.jpg);
 				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
 				overflow: hidden;
 				font-family: helvetica;
 			}
-			.specialItem {
-				display: inline-block;
-				font-size: 0.8em;
-				font-style: italic;
-				font-weight: bold;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
+			.specialGroup {
+				display: flex;
+				.specialItem {
+					display: inline-block;
+					font-size: 0.8em;
+					font-style: italic;
+					font-weight: bold;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.specialItem:after {
+						content: '.........................................................................................................................................................................................'
+					}
+				.specialPrice {
+					flex-shrink: 0;
+					font-size: 0.8em;
+				}
 			}
-			.specialItem:after {
-  			content: " ..................................................................................................."
-			}
-			.specialPrice {
-				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 50px;
+			.specialDescr {
+			font-size: 0.8em;
+			margin-top: 0;
 			}
 	}
 		.location {
+		color: $darkgrey;
 		padding-left: 10px;
 		padding-right: 10px;
 		@include span-columns(4);
-		height: 225px;
+		height: 235px;
 		border: 1px solid red;
 
 		#resAddr {
@@ -163,6 +176,7 @@ header {
 
 .content {
 	@include outer-container(100%);
+	margin-top: 10px;
 	
 	.tabContainer {
 		@include span-columns(9);
@@ -183,31 +197,37 @@ header {
 		}
 
 		h2.header1 {
+			color: $darkgrey;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 		}
 		h2.header2 {
+			color: $darkgrey;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 			text-align: center;
-
 		}
 		h2.header3 {
+			color: $darkgrey;
 			width: 151px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 		}
 		h2.header4 {
+			color: $darkgrey;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 			text-align: center;
+		}
+		h2:hover {
+			color: lighten($darkgrey, 10%);
 		}
 
 		.open {
@@ -234,6 +254,7 @@ header {
 //The Menu Items
 
 	.dinnerSelect {
+		color: $midgrey;
 		font-style: italic;
 	}
 
@@ -274,6 +295,28 @@ header {
 		}
 	}
 
+	#tab3 {
+		button {
+			border: 2px solid $lightgrey;
+			color: $redorange;
+			background-color: white;
+			font-size: 1.1em;
+			padding: 10px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+		button:hover {
+			color: lighten($redorange, 10%);
+		}
+	}
+
+	#tab4 {
+		h4 {
+			color: $midgrey;
+			font-style: italic;
+		}
+	}
+
 
 	
 	.photos {
@@ -287,4 +330,8 @@ header {
 
 .copyright {
 		font-size: 0.7em;
+		a {
+			text-decoration: underline;
+			color: $redorange;
+		}
 }
