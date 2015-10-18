@@ -63,6 +63,7 @@ header {
     content: "";
     display: table; }
   .stuff .news {
+    color: #3B3738;
     padding-left: 10px;
     padding-right: 10px;
     overflow: scroll;
@@ -70,32 +71,76 @@ header {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 225px;
+    height: 235px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB;
     border: 1px solid #BBBBBB; }
     .stuff .news:last-child {
       margin-right: 0; }
+    .stuff .news .subTitle {
+      color: #C63D10;
+      display: inline-block;
+      font-size: 0.8em;
+      font-style: italic;
+      font-weight: bold; }
+    .stuff .news .date {
+      color: #C63D10;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-left: 50px;
+      font-style: italic;
+      font-weight: bold; }
+    .stuff .news .post {
+      font-size: 0.8em; }
   .stuff .special {
+    color: #3B3738;
     padding-left: 10px;
     padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 225px;
+    height: 235px;
     background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
+    border: 1px solid #BBBBBB;
+    overflow: hidden; }
     .stuff .special:last-child {
       margin-right: 0; }
+    .stuff .special .specialImage {
+      height: 75px;
+      background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Sea_scallops_%C2%A9_RGI.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      overflow: hidden;
+      font-family: helvetica; }
+    .stuff .special .specialGroup {
+      display: flex; }
+      .stuff .special .specialGroup .specialItem {
+        display: inline-block;
+        font-size: 0.8em;
+        font-style: italic;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .stuff .special .specialGroup .specialItem:after {
+        content: '.........................................................................................................................................................................................'; }
+      .stuff .special .specialGroup .specialPrice {
+        flex-shrink: 0;
+        font-size: 0.8em; }
+    .stuff .special .specialDescr {
+      font-size: 0.8em;
+      margin-top: 0; }
   .stuff .location {
+    color: #3B3738;
     padding-left: 10px;
     padding-right: 10px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 225px;
+    height: 235px;
     border: 1px solid red;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB; }
@@ -117,7 +162,8 @@ header {
 .content {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 10px; }
   .content::after {
     clear: both;
     content: "";
@@ -139,27 +185,33 @@ header {
       font-size: 14px;
       color: #3B3738; }
     .content .tabContainer h2.header1 {
+      color: #3B3738;
       width: 135px;
       padding: 4px;
       display: inline-block;
       margin: 0; }
     .content .tabContainer h2.header2 {
+      color: #3B3738;
       width: 135px;
       padding: 4px;
       display: inline-block;
       margin: 0;
       text-align: center; }
     .content .tabContainer h2.header3 {
+      color: #3B3738;
       width: 151px;
       padding: 4px;
       display: inline-block;
       margin: 0; }
     .content .tabContainer h2.header4 {
+      color: #3B3738;
       width: 135px;
       padding: 4px;
       display: inline-block;
       margin: 0;
       text-align: center; }
+    .content .tabContainer h2:hover {
+      color: #555051; }
     .content .tabContainer .open {
       display: inline;
       width: 100%; }
@@ -175,6 +227,7 @@ header {
       border-bottom: none;
       margin-right: 0; }
   .content .dinnerSelect {
+    color: #454545;
     font-style: italic; }
   .content .beerList,
   .content .entreeList,
@@ -201,6 +254,22 @@ header {
     border: 3px solid #E0E0E0;
     margin-top: 2px; }
 
+#tab3 button {
+  border: 2px solid #BBBBBB;
+  color: #C63D10;
+  background-color: white;
+  font-size: 1.1em;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold; }
+
+#tab3 button:hover {
+  color: #ed501c; }
+
+#tab4 h4 {
+  color: #454545;
+  font-style: italic; }
+
 .photos {
   float: left;
   display: block;
@@ -216,3 +285,6 @@ header {
 
 .copyright {
   font-size: 0.7em; }
+  .copyright a {
+    text-decoration: underline;
+    color: #C63D10; }
