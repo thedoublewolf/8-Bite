@@ -12,4 +12,4 @@ Together as a team, we broke down the tasks into easily achievable sprints.  Wor
 
 To begin, we discussed the expectations of the client and settled on a design and theme for the entire build.
 
-The framework of the website was built using peer programming, making sure that all of us were aware names of sections to be populated with data and information.
+The framework of the website was built using peer programming, making sure that all of us could easily locate blocks by name to be populated with data and information.
