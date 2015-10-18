@@ -73,79 +73,114 @@
   	</div>
 
   	<div class="content">
-  		<ul>
 
-	  		<li class="story hidden">
-	  		<h2>Our Story</h2>
-        <p>We all grew up in relative poverty, well all of us except for Jef. Jef was the only one who could afford a video game console so we all gathered at his place to enjoy ourselves. A couple rounds would turn in to hours and we would grow hungry from our adventures in to the virtual realm. Thats when the lightbulb sparked over our heads and the first ideas of a meeting place to eat, drink and game came to be. Thanks to the resources of Generous Jef this idea became a reality.</p>
-        <img src='images/storypic.jpg'>
-        <p>Four different people from four different backgrounds, we were brought together by the common love for gaming. Gaming isn't just an activity, it is an experience; and like any other experience, the gaming experience is only enhanced by good food and drinks. Danny, Hyona, Jef, and Jonny presents to you: 8-Bite!</p>
+      <div class="tabContainer">
+    	<section class='headers'>
+        <h2 class='header1 showBorder'>Our Story</h2>
+        <h2 class='header2 noBorder'>Menu</h2>
+        <h2 class='tabTitle header3 noBorder'>Reservation</h2>
+        <h2 class='tabTitle header4 noBorder'>Review</h2>
+      </section>
 
-	  		<li class="menu hidden">
-        menu
-	  		</li>
+        <div class="tabContent">
 
-	  		<li class="reservations hidden">
-	  		Reservation
-          <form class='reservation'>
-            <div>
-              <label for='name'>Name:</label>
-              <br>
-              <input type='text' id='name'/>
-            </div>
-            <br>
-            <div>
-              <label for='guests'>Number of Guests:</label>
-              <br>
-              <input type='num' id='guests'/>
-            </div>
-            <br>
-            <div>
-              <label for='date'>Date:</label>
-              <br>
-              <input type='text' id='guests'/>
-            </div>
-            <br>
-            <div>
-              <label for='notes'>Special Notes:</label>
-              <br>
-              <input type='text' id='notes'/>
-            </div>
-            <br>
-            <div>
-              <label for='preference'>Seating Preference</label>
-              <br>
-              <select name='select'>
-                <option value='indoor'>Indoor</option>
-                <option value='outdoor'>Outdoor</option>
-              </select>
-            </div>
-            <br>
-            <div class='button'>
-              <button type='submit'>Reserve Table</button>
-            </div>
-          </form>
-        </li>
+        <section class='ourStory'>
+    	  	<div id="tab1" class='open'>
+            <p>We all grew up in relative poverty, well all of us except for Jef. Jef was the only one who could afford a video game console so we all gathered at his place to enjoy ourselves. A couple rounds would turn in to hours and we would grow hungry from our adventures into the virtual realm. Thats when the lightbulb sparked over our heads and the first ideas of a meeting place to eat, drink and game came to be. Thanks to the resources of Generous Jef this idea became a reality.
+            <img src='images/storypic.jpg'>
+            Four different people from four different backgrounds, we were brought together by the common love for gaming. Gaming isn't just an activity, it is an experience; and like any other experience, the gaming experience is only enhanced by good food and drinks. Danny, Hyona, Jef, and Jonny presents to you: 8-Bite!</p>
+        </div>
+        </section>
 
-	  		<li class="review">
-        <h4>Tell us about your experience!</h4>
-        <p>At 8-Bite, we are always open to suggestions that will make our pub more enjoyable. Tell us what games you'd like to play, what menu items you hate, or just how much you love us!</p>
-	  		<div id="disqus_thread"></div>
-          <script type="text/javascript">
-              /* * * CONFIGURATION VARIABLES * * */
-              var disqus_shortname = '8-bite';
-              
-              /* * * DON'T EDIT BELOW THIS LINE * * */
-              (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	  		</li>
-  		</ul>
+        <section>
+        
+        <div id="tab2" class='close'>
+          <h2 class='dinnerSelect'>Our Dinner Selection...</h2>
+            <hr class='menuLine'>
+            <hr class='menuLine2'>
+          
+          <div class='beerList'>
+            <h3>Beer</h3>
+            <hr class='menuLine'>
+          </div>
 
+          <div class='entreeList'>
+          <h3>Entrees</h3>
+          <hr class='menuLine'>
+          </div>
+          <div class='gameList'>
+          <h3>Games</h3>
+          <hr class='menuLine'>
+          </div>
+        </div>
+        </section>
+
+        <section>
+          
+          <div id="tab3" class='close'>
+            <form class='closeTab reservation'>
+              <div>
+                <label for='name'>Name:</label>
+                <br>
+                <input type='text' id='name'/>
+              </div>
+              <br>
+              <div>
+                <label for='guests'>Number of Guests:</label>
+                <br>
+                <input type='num' id='guests'/>
+              </div>
+              <br>
+              <div>
+                <label for='date'>Date:</label>
+                <br>
+                <input type='text' id='guests'/>
+              </div>
+              <br>
+              <div>
+                <label for='notes'>Special Notes:</label>
+                <br>
+                <input type='text' id='notes'/>
+              </div>
+              <br>
+              <div>
+                <label for='preference'>Seating Preference</label>
+                <br>
+                <select name='select'>
+                  <option value='indoor'>Indoor</option>
+                  <option value='outdoor'>Outdoor</option>
+                </select>
+              </div>
+              <br>
+              <div class='button'>
+                <button type='submit'>Reserve Table</button>
+              </div>
+            </form>
+        </div>
+
+          <section>
+            
+            <div id="tab4" class='close'>
+            <h4 class='closeTab'>Tell us about your experience!</h4>
+              <p class='closeTab'>At 8-Bite, we are always open to suggestions that will make our pub more enjoyable. Tell us what games you'd like to play, what menu items you hate, or just how much you love us!</p>
+              <div id="disqus_thread" class='closeTab'></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = '8-bite';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          </section>
+          </div>
+	  </div>
+	  	
   		<div class="photos">
   		Food Photos
   		</div>

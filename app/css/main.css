@@ -156,29 +156,96 @@ header {
     clear: both;
     content: "";
     display: table; }
-  .content ul {
+  .content .tabContainer {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 74.41059%;
-    background-color: #eeeeee;
-    border: 1px solid #BBBBBB; }
-    .content ul:last-child {
+    display: inline;
+    margin-top: 30px; }
+    .content .tabContainer:last-child {
       margin-right: 0; }
-    .content ul .hidden {
+    .content .tabContainer .headers {
+      background: #fff;
+      border-bottom: none;
+      cursor: pointer; }
+    .content .tabContainer p {
+      font-size: 14px;
+      color: #3B3738; }
+    .content .tabContainer h2.header1 {
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header2 {
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0;
+      text-align: center; }
+    .content .tabContainer h2.header3 {
+      width: 151px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0; }
+    .content .tabContainer h2.header4 {
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0;
+      text-align: center; }
+    .content .tabContainer .open {
+      display: inline;
+      width: 100%; }
+    .content .tabContainer .close {
       display: none; }
-  .content .photos {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    background-color: #eeeeee;
-    border: 1px solid #BBBBBB;
-    height: 200px;
-    margin-top: 15px;
-    margin-bottom: 100px; }
-    .content .photos:last-child {
-      margin-right: 0; }
+    .content .tabContainer .noBorder {
+      border: 1px solid #BBBBBB;
+      border-top: none;
+      border-right: none;
+      border-left: none; }
+    .content .tabContainer .showBorder {
+      border: 1px solid #BBBBBB;
+      border-bottom: none; }
+  .content .dinnerSelect {
+    font-style: italic; }
+  .content .beerList,
+  .content .entreeList,
+  .content .gameList {
+    font-size: 18px;
+    color: #C63D10;
+    margin-top: 10px; }
+  .content .menuItems {
+    display: flex; }
+    .content .menuItems .title {
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .content .menuItems .title:after {
+      content: '.........................................................................................................................................................................................'; }
+    .content .menuItems .price {
+      flex-shrink: 0; }
+  .content .menuLine {
+    border: 1px solid #E0E0E0;
+    margin-bottom: 0; }
+  .content .menuLine2 {
+    border: 3px solid #E0E0E0;
+    margin-top: 2px; }
+
+.photos {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  background-color: #eeeeee;
+  border: 1px solid #BBBBBB;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 100px; }
+  .photos:last-child {
+    margin-right: 0; }
 
 .copyright {
   font-size: 0.7em; }

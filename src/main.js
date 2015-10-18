@@ -11,18 +11,22 @@ let promise = $.getJSON(pubUrl);
 promise.then( function (resp) {
   _.each(resp.Beer, function (item) {
   var itemHTML = loadTemplate(item);
-  $('.menu').append(itemHTML);
+  $('.beerList').append(itemHTML);
 })
 });
 
 let loadTemplate = function (data) {
   let template = `
- <div class='beer'>
-    <p>${data.item}${data.price}</p>
-    <p>${data.description}${data.allergies}${data.favorite}${data.bottle}${data.draught}</p>
- </div>
+  <div class='menuItems beer'>
+    <p class='title'>${data.item}</p><p class='price'>${data.price}</p>
+  </div>
+  <div class='menuDetails'>
+    <p class='description'>${data.description}</p>
+    <div class='vertical'></div>
+    <p class='icons'>${data.allergies}${data.favorite}${data.bottle}${data.draught}</p>
+  </div>
 `;
-$('.menu').append(template);
+$('.beerList').append(template);
 }
 }());
 
@@ -35,18 +39,22 @@ let promise = $.getJSON(pubUrl);
 promise.then( function (resp) {
   _.each(resp.entrees, function (item) {
   var itemHTML = loadTemplate(item);
-  $('.menu').append(itemHTML);
+  $('.entreeList').append(itemHTML);
 })
 });
 
 let loadTemplate = function (data) {
   let template = `
- <div class='entrees'>
-    <p>${data.item}${data.price}</p>
-    <p>${data.description}${data.allergies}${data.favorite}${data.spicy}${data.vegan}</p>
- </div>
+  <div class='menuItems entrees'>
+    <p class='title'>${data.item}</p><p class='price'>${data.price}</p>
+  </div>
+  <div class='menuDetails'>
+    <p class='description'>${data.description}</p>
+    <div class='vertical'></div>
+    <p class='icons'>${data.allergies}${data.favorite}${data.spicy}${data.vegan}</p>
+  </div>
 `;
-$('.menu').append(template);
+$('.entreeList').append(template);
 }
 }());
 
@@ -59,18 +67,22 @@ let promise = $.getJSON(pubUrl);
 promise.then( function (resp) {
   _.each(resp.games, function (item) {
   var itemHTML = loadTemplate(item);
-  $('.menu').append(itemHTML);
+  $('.gameList').append(itemHTML);
 })
 });
 
 let loadTemplate = function (data) {
   let template = `
- <div class='games'>
-    <p>${data.item}${data.price}</p>
-    <p>${data.description}${data.favorite}${data.online}${data.multiplayer}${data.rating}${data.platform}</p>
- </div>
+  <div class='menuItems games'>
+    <p class='title'>${data.item}</p><p class='price'>${data.price}</p>
+  </div>
+  <div class='menuDetails'>
+    <p class='description'>${data.description}</p>
+    <div class='vertical'></div>
+    <p class='icons'>${data.favorite}${data.online}${data.multiplayer}${data.rating}${data.platform}</p>
+  </div>
 `;
-$('.menu').append(template);
+$('.gameList').append(template);
 }
 }());
 
@@ -132,4 +144,61 @@ menuPromise.then( function(menuObject){
 
 }());
 
+$('.header1').on('click', function (){
+    $('#tab1').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab3').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+});
 
+$('.header2').on('click', function (){
+    $('#tab2').removeClass('close').addClass('open');
+    $('#tab3').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+});
+
+$('.header3').on('click', function (){
+    $('#tab3').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab4').removeClass('open').addClass('close');
+}); 
+$('.header4').on('click', function (){
+    $('#tab4').removeClass('close').addClass('open');
+    $('#tab2').removeClass('open').addClass('close');
+    $('#tab1').removeClass('open').addClass('close');
+    $('#tab3').removeClass('open').addClass('close');
+}); 
+
+$('.header1').on('click', function (){
+    $('.header1').removeClass('noBorder').addClass('showBorder');
+    $('.header2').removeClass('showBorder').addClass('noBorder');
+    $('.header3').removeClass('showBorder').addClass('noBorder');
+    $('.header4').removeClass('showBorder').addClass('noBorder');
+
+  });
+
+$('.header2').on('click', function (){
+    $('.header1').removeClass('showBorder').addClass('noBorder');
+    $('.header2').removeClass('noBorder').addClass('showBorder');
+    $('.header3').removeClass('showBorder').addClass('noBorder');
+    $('.header4').removeClass('showBorder').addClass('noBorder');
+
+  });
+
+$('.header3').on('click', function (){
+    $('.header1').removeClass('showBorder').addClass('noBorder');
+    $('.header2').removeClass('showBorder').addClass('noBorder');
+    $('.header3').removeClass('noBorder').addClass('showBorder');
+    $('.header4').removeClass('showBorder').addClass('noBorder');
+
+  });
+
+$('.header4').on('click', function (){
+    $('.header1').removeClass('showBorder').addClass('noBorder');
+    $('.header2').removeClass('showBorder').addClass('noBorder');
+    $('.header3').removeClass('showBorder').addClass('noBorder');
+    $('.header4').removeClass('noBorder').addClass('showBorder');
+
+  });
