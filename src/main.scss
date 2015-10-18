@@ -55,6 +55,10 @@ header {
 			font-size: 3em;
 			padding: 10px;
 		}
+		li:hover {
+			color: lighten($redorange, 10%);
+			font-size: 3.1em;
+		}
 	}
 }
 

@@ -46,6 +46,9 @@ header {
       color: #C63D10;
       font-size: 3em;
       padding: 10px; }
+    header .socialmedia li:hover {
+      color: #ed501c;
+      font-size: 3.1em; }
 
 .banner {
   overflow: hidden;
