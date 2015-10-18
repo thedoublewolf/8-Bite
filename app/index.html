@@ -5,11 +5,6 @@
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <!--Add Google Maps API URL-->
-  <style>
-      #map {
-        width: 100px;
-        height: 100px;
-      }
     </style>
   <script src="https://maps.googleapis.com/maps/api/js"></script>  
 </head>
@@ -78,8 +73,12 @@
 	  		</li>
   		</ul>
 
-  		<div class="photos">
-  		Food Photos
+  		<div class="foodPhotos">
+          <script type="text/template" id="foodPics">
+            <div class="pubShots">
+              <img src="https://farm<%=farm%>.staticflickr.com/<%=server%>/<%=id%>_<%=secret%>_m.jpg">
+            </div>
+          </script>
   		</div>
   	</div>
 
