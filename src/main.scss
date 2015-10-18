@@ -125,43 +125,48 @@ header {
 	
 	.tabContainer {
 		@include span-columns(9);
-		background-color: lighten($lightgrey, 20%);
+		// background-color: lighten($lightgrey, 20%);
 		// border: 1px solid $lightgrey;
 		display: inline;
+		margin-top: 30px;
+
+		.headers {
+			background: #fff;
+			border-bottom: none;
+			cursor: pointer;
+		}
+
+		p {
+			font-size: 14px;
+			color: $darkgrey;
+		}
 
 		h2.header1 {
-			border: 1px solid $grayBorder;
-			border-top: none;
-			border-left: none;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 		}
 		h2.header2 {
-			border: 1px solid $grayBorder;
-			border-bottom: none;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
+			text-align: center;
+
 		}
 		h2.header3 {
-			border: 1px solid $grayBorder;
-			border-bottom: none;
 			width: 151px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
 		}
 		h2.header4 {
-			border: 1px solid $grayBorder;
-			border-top: none;
-			border-right: none;
 			width: 135px;
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
+			text-align: center;
 		}
 
 		.open {
@@ -171,8 +176,65 @@ header {
 		.close {
 			display: none;
 		}
+
+		.noBorder {
+			border: 1px solid $lightgrey;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+		}
+		.showBorder {
+			border: 1px solid $lightgrey;
+			border-bottom: none;
+		}
+
 	}
 
+//The Menu Items
+
+	.dinnerSelect {
+		font-style: italic;
+	}
+
+	.beerList,
+	.entreeList,
+	.gameList {
+		font-size: 18px;
+		color: $redorange;
+		margin-top: 10px;
+	}	
+
+		.menuItems {
+			display: flex;
+
+			.title {
+				font-size: 14px;
+				font-weight: bold;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+				.title:after {
+					content: '.........................................................................................................................................................................................'
+				}
+
+			.price {
+				flex-shrink: 0;
+			}
+	
+}
+		.menuLine {
+			border: 1px solid $grayBorder;
+			margin-bottom: 0;
+		}
+		.menuLine2 {
+			border: 3px solid $grayBorder;
+			margin-top: 2px;
+		}
+	}
+
+
+	
 	.photos {
 		@include span-columns(3);
 		background-color: lighten($lightgrey, 20%);
@@ -181,7 +243,7 @@ header {
 		margin-top: 15px;
 		margin-bottom: 100px;
 		}
-}
+
 .copyright {
 		font-size: 0.7em;
 }
