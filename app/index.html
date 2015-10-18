@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/main.css">
   <!--Add Google Maps API URL-->
     </style>
-  <script src="https://maps.googleapis.com/maps/api/js"></script>  
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 
@@ -15,7 +15,11 @@
   	<header>
   		<div class="logo"><img src="images/8bitburger.png"></div>
   		<div class="socialmedia">
-  		SOCIAL MEDIA
+  		  <ul>
+          <li class="brandico-facebook"></li>
+          <li class="brandico-twitter-bird"></li>
+          <li class="brandico-instagram"></li>
+        </ul>
   		</div>
   	</header>
   	<hr>
@@ -24,17 +28,23 @@
   	</banner>
 
   	<div class="stuff">
-  		<div class="news">
-
-  		</div>
-
-  		<div class="special">
-  		Today's Special
+      <div class="news">
+      <p class="title">Latest News</p>
       <hr>
+        <script type="text/template" id="news">
+          <p class="subTitle"><%= title %></p>
+          <p class="date"><%= date_published %></p>
+          <p class="post"><%= post %></p>
+        </script>
+      </div>
+  		<div class="special">
+      <p class="title">Today's Special</p>
+      <hr>
+      <div class="specialImage"></div>
   		</div>
   		<div class="location">
   		<Our Location>
-      Our Location
+      <p class="title">Our Location</p>
       <hr>
         <!-- Add Google Maps -->
           <div id="map">
@@ -53,32 +63,120 @@
           </div>
       <p id="resAddr">481 Flat Shoals Ave. SE, Atlanta, GA 30316</p>
       <p id="telFax">404-522-0877 &bull; 404-522-0878 &bull; Map &bull; Directions</p>
-  		
+
       </div>
   	</div>
 
   	<div class="content">
-  		<ul>
-	  		<li class="story">
-	  		story
-	  		</li>
-	  		<li class="menu hidden">
-	  		menu
-	  		</li>
-	  		<li class="reservations hidden">
-	  		reservation
-	  		</li>
-	  		<li class="review hidden">
-	  		review
-	  		</li>
-  		</ul>
+      <div class="tabContainer">
+    	<section class='headers'>
+        <h2 class='header1 showBorder'>Our Story</h2>
+        <h2 class='header2 noBorder'>Menu</h2>
+        <h2 class='tabTitle header3 noBorder'>Reservation</h2>
+        <h2 class='tabTitle header4 noBorder'>Review</h2>
+      </section>
 
-  		<div class="foodPhotos">
-          <script type="text/template" id="foodPics">
-            <div class="pubShots">
-              <img src="https://farm<%=farm%>.staticflickr.com/<%=server%>/<%=id%>_<%=secret%>_m.jpg">
-            </div>
-          </script>
+        <div class="tabContent">
+
+        <section class='ourStory'>
+    	  	<div id="tab1" class='open'>
+            <p>We all grew up in relative poverty, well all of us except for Jef. Jef was the only one who could afford a video game console so we all gathered at his place to enjoy ourselves. A couple rounds would turn in to hours and we would grow hungry from our adventures into the virtual realm. Thats when the lightbulb sparked over our heads and the first ideas of a meeting place to eat, drink and game came to be. Thanks to the resources of Generous Jef this idea became a reality.</p>
+            <img src='images/storypic.jpg'>
+            <p>Four different people from four different backgrounds, we were brought together by the common love for gaming. Gaming isn't just an activity, it is an experience; and like any other experience, the gaming experience is only enhanced by good food and drinks. Danny, Hyona, Jef, and Jonny presents to you: 8-Bite!</p>
+        </div>
+        </section>
+
+        <section>
+        
+        <div id="tab2" class='close'>
+          <h2 class='dinnerSelect'>Our Dinner Selection...</h2>
+            <hr class='menuLine'>
+            <hr class='menuLine2'>
+          
+          <div class='beerList'>
+            <h3>Beer</h3>
+            <hr class='menuLine'>
+          </div>
+
+          <div class='entreeList'>
+          <h3>Entrees</h3>
+          <hr class='menuLine'>
+          </div>
+          <div class='gameList'>
+          <h3>Games</h3>
+          <hr class='menuLine'>
+          </div>
+        </div>
+        </section>
+
+        <section>
+          
+          <div id="tab3" class='close'>
+            <form class='closeTab reservation'>
+              <div>
+                <label for='name'>Name:</label>
+                <br>
+                <input type='text' id='name'/>
+              </div>
+              <br>
+              <div>
+                <label for='guests'>Number of Guests:</label>
+                <br>
+                <input type='num' id='guests'/>
+              </div>
+              <br>
+              <div>
+                <label for='date'>Date:</label>
+                <br>
+                <input type='text' id='guests'/>
+              </div>
+              <br>
+              <div>
+                <label for='notes'>Special Notes:</label>
+                <br>
+                <input type='text' id='notes'/>
+              </div>
+              <br>
+              <div>
+                <label for='preference'>Seating Preference</label>
+                <br>
+                <select name='select'>
+                  <option value='indoor'>Indoor</option>
+                  <option value='outdoor'>Outdoor</option>
+                </select>
+              </div>
+              <br>
+              <div class='button'>
+                <button type='submit'>Reserve Table</button>
+              </div>
+            </form>
+        </div>
+
+          <section>
+            
+            <div id="tab4" class='close'>
+            <h4 class='closeTab'>Tell us about your experience!</h4>
+              <p class='closeTab'>At 8-Bite, we are always open to suggestions that will make our pub more enjoyable. Tell us what games you'd like to play, what menu items you hate, or just how much you love us!</p>
+              <div id="disqus_thread" class='closeTab'></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = '8-bite';
+                    
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          </div>
+          </section>
+          </div>
+	  </div>
+	  	
+  		<div class="photos">
+>>>>>>> 9fe83d9afbdcce3647d2ec8e2648434eea5aa6cd
   		</div>
   	</div>
 
@@ -86,7 +184,7 @@
 
   	<footer>
   	<hr>
-  	<span class="copyright">&copy; 2015 8-Bite.</span>
+  	<span class="copyright">&copy; 2015 8-Bite.  The photos used for our banner and in Our Story are by <a href="https://www.flickr.com/photos/ogwrnsk/">naosuke ii</a> and are for demonstration purposes only.</span>
   	</footer>
 
   </div>

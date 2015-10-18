@@ -1,5 +1,11 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
 
 //cool colors
 $darkgrey: #3B3738;
@@ -7,6 +13,7 @@ $offwhite: #FDF3E7;
 $midgrey: #454545;
 $lightgrey: #BBBBBB;
 $redorange: #C63D10;
+$grayBorder: #E0E0E0;
 
 hr {
 	border: none;
@@ -37,11 +44,17 @@ header {
 	}
 	.socialmedia {
 		float: right;
-		width: 300px;
+		width: 250px;
 		height: 100px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
-
+		text-align: center;
+		li {
+			display: inline-block;
+			color: $redorange;
+			font-size: 3em;
+			padding: 10px;
+		}
 	}
 }
 
@@ -57,21 +70,82 @@ header {
 	margin-top: 12px;
 	@include outer-container(100%);
 	.news {
+		color: $darkgrey;
+		padding-left: 10px;
+		padding-right: 10px;
+		overflow: scroll;
 		@include span-columns(4);
-		height: 200px;
+		height: 235px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 		border: 1px solid $lightgrey;
+		.subTitle {
+			color: $redorange;
+			display: inline-block;
+			font-size: 0.8em;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.date {
+			color: $redorange;
+			display: inline-block;
+			font-size: 0.8em;
+			margin-left: 50px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.post {
+			font-size: 0.8em;
+		}
 	}
 		.special {
+		color: $darkgrey;
+		padding-left: 10px;
+		padding-right: 10px;
 		@include span-columns(4);
-		height: 200px;
+		height: 235px;
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
+		overflow: hidden;
+			.specialImage {
+				height: 75px;
+				background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8d/Sea_scallops_%C2%A9_RGI.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				overflow: hidden;
+				font-family: helvetica;
+			}
+			.specialGroup {
+				display: flex;
+				.specialItem {
+					display: inline-block;
+					font-size: 0.8em;
+					font-style: italic;
+					font-weight: bold;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.specialItem:after {
+						content: '.........................................................................................................................................................................................'
+					}
+				.specialPrice {
+					flex-shrink: 0;
+					font-size: 0.8em;
+				}
+			}
+			.specialDescr {
+			font-size: 0.8em;
+			margin-top: 0;
+			}
 	}
 		.location {
+		color: $darkgrey;
+		padding-left: 10px;
+		padding-right: 10px;
 		@include span-columns(4);
-		height: 200px;
+		height: 235px;
 		border: 1px solid red;
 
 		#resAddr {
@@ -100,14 +174,149 @@ header {
 
 .content {
 	@include outer-container(100%);
-	ul {
+	margin-top: 10px;
+	
+	.tabContainer {
 		@include span-columns(9);
-		background-color: lighten($lightgrey, 20%);
-		border: 1px solid $lightgrey;
-		.hidden {
+		// background-color: lighten($lightgrey, 20%);
+		// border: 1px solid $lightgrey;
+		display: inline;
+		margin-top: 30px;
+
+		.headers {
+			background: #fff;
+			border-bottom: none;
+			cursor: pointer;
+		}
+
+		p {
+			font-size: 14px;
+			color: $darkgrey;
+		}
+
+		h2.header1 {
+			color: $darkgrey;
+			width: 135px;
+			padding: 4px;
+			display: inline-block;
+			margin: 0;
+		}
+		h2.header2 {
+			color: $darkgrey;
+			width: 135px;
+			padding: 4px;
+			display: inline-block;
+			margin: 0;
+			text-align: center;
+		}
+		h2.header3 {
+			color: $darkgrey;
+			width: 151px;
+			padding: 4px;
+			display: inline-block;
+			margin: 0;
+		}
+		h2.header4 {
+			color: $darkgrey;
+			width: 135px;
+			padding: 4px;
+			display: inline-block;
+			margin: 0;
+			text-align: center;
+		}
+		h2:hover {
+			color: lighten($darkgrey, 10%);
+		}
+
+		.open {
+			display: inline;
+			width:100%;
+		}
+		.close {
 			display: none;
 		}
+
+		.noBorder {
+			border: 1px solid $lightgrey;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+		}
+		.showBorder {
+			border: 1px solid $lightgrey;
+			border-bottom: none;
+		}
+
 	}
+
+//The Menu Items
+
+	.dinnerSelect {
+		color: $midgrey;
+		font-style: italic;
+	}
+
+	.beerList,
+	.entreeList,
+	.gameList {
+		font-size: 18px;
+		color: $redorange;
+		margin-top: 10px;
+	}	
+
+		.menuItems {
+			display: flex;
+
+			.title {
+				font-size: 14px;
+				font-weight: bold;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+				.title:after {
+					content: '.........................................................................................................................................................................................'
+				}
+
+			.price {
+				flex-shrink: 0;
+			}
+	
+}
+		.menuLine {
+			border: 1px solid $grayBorder;
+			margin-bottom: 0;
+		}
+		.menuLine2 {
+			border: 3px solid $grayBorder;
+			margin-top: 2px;
+		}
+	}
+
+	#tab3 {
+		button {
+			border: 2px solid $lightgrey;
+			color: $redorange;
+			background-color: white;
+			font-size: 1.1em;
+			padding: 10px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+		button:hover {
+			color: lighten($redorange, 10%);
+		}
+	}
+
+	#tab4 {
+		h4 {
+			color: $midgrey;
+			font-style: italic;
+		}
+	}
+
+
+	
 	.photos {
 		@include span-columns(3);
 		background-color: lighten($lightgrey, 20%);
@@ -115,8 +324,12 @@ header {
 		height: 200px;
 		margin-top: 15px;
 		margin-bottom: 100px;
-	}
-}
+		}
+
 .copyright {
 		font-size: 0.7em;
+		a {
+			text-decoration: underline;
+			color: $redorange;
+		}
 }
