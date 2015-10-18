@@ -274,13 +274,17 @@ header {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
-  background-color: #eeeeee;
-  border: 1px solid #BBBBBB;
-  height: 200px;
+  background-color: white;
+  width: 150px;
+  height: auto;
   margin-top: 15px;
   margin-bottom: 100px; }
   .photos:last-child {
     margin-right: 0; }
+
+.photos img {
+  margin-bottom: 30px;
+  border: 1px solid #BBBBBB; }
 
 .copyright {
   font-size: 0.7em; }

@@ -167,8 +167,6 @@ header {
 			margin-right: auto;
 		}
 
-		
-
 		background-color: lighten($lightgrey, 20%);
 		border: 1px solid $lightgrey;
 	}
@@ -321,11 +319,16 @@ header {
 	
 	.photos {
 		@include span-columns(3);
-		background-color: lighten($lightgrey, 20%);
-		border: 1px solid $lightgrey;
-		height: 200px;
+		background-color: lighten($offwhite, 20%);
+		width: 150px;
+		height: auto;
 		margin-top: 15px;
 		margin-bottom: 100px;
+		}
+
+		.photos img {
+			margin-bottom: 30px;
+			border: 1px solid $lightgrey;
 		}
 
 .copyright {
