@@ -172,7 +172,8 @@ header {
       border-left: none; }
     .content .tabContainer .showBorder {
       border: 1px solid #BBBBBB;
-      border-bottom: none; }
+      border-bottom: none;
+      margin-right: 0; }
   .content .dinnerSelect {
     font-style: italic; }
   .content .beerList,

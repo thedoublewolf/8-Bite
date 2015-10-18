@@ -186,6 +186,7 @@ header {
 		.showBorder {
 			border: 1px solid $lightgrey;
 			border-bottom: none;
+			margin-right: 0;
 		}
 
 	}
@@ -234,7 +235,7 @@ header {
 	}
 
 
-	
+
 	.photos {
 		@include span-columns(3);
 		background-color: lighten($lightgrey, 20%);
