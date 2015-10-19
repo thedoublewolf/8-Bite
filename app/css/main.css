@@ -275,12 +275,14 @@ header {
     display: flex;
     justify-content: space-between; }
     .content .menuDetails .description {
-      display: inline; }
+      display: inline;
+      width: 600px; }
     .content .menuDetails .vertical {
       height: 40px;
       width: 2px;
       background: #E1E3DF;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: center; }
     .content .menuDetails .icons {
       display: inline; }
 
@@ -299,6 +301,24 @@ header {
 #tab4 h4 {
   color: #454545;
   font-style: italic; }
+
+.reservation {
+  margin-top: 30px;
+  font-family: "Lato", sans-serif; }
+  .reservation label {
+    color: #C63D10;
+    font-size: 18px; }
+  .reservation input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px; }
+  .reservation select {
+    width: 300px;
+    height: 40px;
+    background: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 3px; }
 
 .photos {
   float: left;
