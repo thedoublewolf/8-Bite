@@ -7,6 +7,9 @@
   font-family: 'brandico', sans-serif;
 }
 
+//cool fonts
+$lato: 'Lato', sans-serif;
+
 //cool colors
 $darkgrey: #3B3738;
 $offwhite: #FDF3E7;
@@ -187,6 +190,7 @@ header {
 			background: #fff;
 			border-bottom: none;
 			cursor: pointer;
+			font-family: $lato;
 		}
 
 		p {
@@ -200,6 +204,8 @@ header {
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
+			float: left;
+			text-align: center;
 		}
 		h2.header2 {
 			color: $darkgrey;
@@ -208,6 +214,7 @@ header {
 			display: inline-block;
 			margin: 0;
 			text-align: center;
+			float: left;
 		}
 		h2.header3 {
 			color: $darkgrey;
@@ -215,6 +222,8 @@ header {
 			padding: 4px;
 			display: inline-block;
 			margin: 0;
+			float: left;
+			text-align: center;
 		}
 		h2.header4 {
 			color: $darkgrey;
@@ -224,6 +233,17 @@ header {
 			margin: 0;
 			text-align: center;
 		}
+		h2.header5 {
+			color: $darkgrey;
+			width: 135px;
+			padding: 4px;
+			display: inline-block;
+			margin: 0;
+			text-align: center;
+			position: absolute;
+			top: 821px;
+		}
+
 		h2:hover {
 			color: lighten($darkgrey, 10%);
 		}
@@ -245,6 +265,7 @@ header {
 		.showBorder {
 			border: 1px solid $lightgrey;
 			border-bottom: none;
+			margin-right: 0;
 		}
 
 	}
@@ -254,6 +275,7 @@ header {
 	.dinnerSelect {
 		color: $midgrey;
 		font-style: italic;
+		font-family: $lato;
 	}
 
 	.beerList,
@@ -262,12 +284,14 @@ header {
 		font-size: 18px;
 		color: $redorange;
 		margin-top: 10px;
+		// font-family: $lato;
 	}	
 
 		.menuItems {
 			display: flex;
 
 			.title {
+				margin-top: 30px;
 				font-size: 14px;
 				font-weight: bold;
 				white-space: nowrap;
@@ -280,18 +304,43 @@ header {
 
 			.price {
 				flex-shrink: 0;
+				margin-top: 28px;
 			}
-	
-}
+			
+		}
+
 		.menuLine {
 			border: 1px solid $grayBorder;
 			margin-bottom: 0;
 		}
+
 		.menuLine2 {
 			border: 3px solid $grayBorder;
 			margin-top: 2px;
 		}
+
+	.menuDetails {
+		display: flex;
+		justify-content: space-between;
+	
+		.description {
+			display: inline;
+
+
+		}
+
+		.vertical {
+    height: 40px;
+    width: 2px;
+    background: #E1E3DF;
+    display: inline-block;
+		}
+
+		.icons {
+			display: inline;
+		}
 	}
+}
 
 	#tab3 {
 		button {
@@ -316,7 +365,7 @@ header {
 	}
 
 
-	
+
 	.photos {
 		@include span-columns(3);
 		background-color: lighten($offwhite, 20%);

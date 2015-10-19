@@ -21,7 +21,7 @@ let loadTemplate = function (data) {
   <div class='menuDetails'>
     <p class='description'>${data.description}</p>
     <div class='vertical'></div>
-    <p class='icons'>${data.allergies}${data.favorite}${data.bottle}${data.draught}</p>
+    <p class='icons'><img src='images/allergies.png' width='20px' height='20px'${data.allergies}><img src='images/favorite.png' width='20px' height='20px'${data.favorite}><img src='images/bottle.png' width='20px' height='20px'${data.bottle}><img src='images/draught.png' width='20px' height='20px'${data.draught}></p>
   </div>
 `;
 $('.beerList').append(template);
@@ -49,7 +49,7 @@ let loadTemplate = function (data) {
   <div class='menuDetails'>
     <p class='description'>${data.description}</p>
     <div class='vertical'></div>
-    <p class='icons'>${data.allergies}${data.favorite}${data.spicy}${data.vegan}</p>
+    <p class='icons'><img src='images/allergies.png' width='20px' height='20px'${data.allergies}><img src='images/favorite.png' width='20px' height='20px'${data.favorite}><img src='images/spicy.png' width='20px' height='20px'${data.spicy}><img src='images/vegan.png' width='20px' height='20px'${data.vegan}></p>
   </div>
 `;
 $('.entreeList').append(template);
@@ -77,7 +77,7 @@ let loadTemplate = function (data) {
   <div class='menuDetails'>
     <p class='description'>${data.description}</p>
     <div class='vertical'></div>
-    <p class='icons'>${data.favorite}${data.online}${data.multiplayer}${data.rating}${data.platform}</p>
+    <p class='icons'><img src='images/favorite.png' width='20px' height='20px'${data.favorite}><img src='images/online.png' width='20px' height='20px'${data.online}><img src='images/multiplayer.png' width='20px' height='20px'${data.multiplayer}><img src='images/rating.png' width='20px' height='20px'${data.rating}><img src='images/platform.png' width='20px' height='20px'${data.platform}></p>
   </div>
 `;
 $('.gameList').append(template);
@@ -174,7 +174,7 @@ $('.header1').on('click', function (){
     $('.header2').removeClass('showBorder').addClass('noBorder');
     $('.header3').removeClass('showBorder').addClass('noBorder');
     $('.header4').removeClass('showBorder').addClass('noBorder');
-
+    $('.header5').removeClass('showBorder').addClass('noBorder');
   });
 
 $('.header2').on('click', function (){
@@ -182,7 +182,7 @@ $('.header2').on('click', function (){
     $('.header2').removeClass('noBorder').addClass('showBorder');
     $('.header3').removeClass('showBorder').addClass('noBorder');
     $('.header4').removeClass('showBorder').addClass('noBorder');
-
+    $('.header5').removeClass('showBorder').addClass('noBorder');
   });
 
 $('.header3').on('click', function (){
@@ -190,7 +190,7 @@ $('.header3').on('click', function (){
     $('.header2').removeClass('showBorder').addClass('noBorder');
     $('.header3').removeClass('noBorder').addClass('showBorder');
     $('.header4').removeClass('showBorder').addClass('noBorder');
-
+    $('.header5').removeClass('showBorder').addClass('noBorder');
   });
 
 $('.header4').on('click', function (){
@@ -198,7 +198,7 @@ $('.header4').on('click', function (){
     $('.header2').removeClass('showBorder').addClass('noBorder');
     $('.header3').removeClass('showBorder').addClass('noBorder');
     $('.header4').removeClass('noBorder').addClass('showBorder');
-
+    $('.header5').removeClass('showBorder').addClass('noBorder');
   });
 >>>>>>> 9fe83d9afbdcce3647d2ec8e2648434eea5aa6cd
 
