@@ -18,7 +18,7 @@
   });
 
   var loadTemplate = function loadTemplate(data) {
-    var template = '\n  <div class=\'menuItems beer\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'>' + data.allergies + data.favorite + data.bottle + data.draught + '</p>\n  </div>\n';
+    var template = '\n  <div class=\'menuItems beer\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'><img src=\'images/allergies.png\' width=\'20px\' height=\'20px\'' + data.allergies + '><img src=\'images/favorite.png\' width=\'20px\' height=\'20px\'' + data.favorite + '><img src=\'images/bottle.png\' width=\'20px\' height=\'20px\'' + data.bottle + '><img src=\'images/draught.png\' width=\'20px\' height=\'20px\'' + data.draught + '></p>\n  </div>\n';
     $('.beerList').append(template);
   };
 })();
@@ -37,7 +37,7 @@
   });
 
   var loadTemplate = function loadTemplate(data) {
-    var template = '\n  <div class=\'menuItems entrees\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'>' + data.allergies + data.favorite + data.spicy + data.vegan + '</p>\n  </div>\n';
+    var template = '\n  <div class=\'menuItems entrees\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'><img src=\'images/allergies.png\' width=\'20px\' height=\'20px\'' + data.allergies + '><img src=\'images/favorite.png\' width=\'20px\' height=\'20px\'' + data.favorite + '><img src=\'images/spicy.png\' width=\'20px\' height=\'20px\'' + data.spicy + '><img src=\'images/vegan.png\' width=\'20px\' height=\'20px\'' + data.vegan + '></p>\n  </div>\n';
     $('.entreeList').append(template);
   };
 })();
@@ -56,7 +56,7 @@
   });
 
   var loadTemplate = function loadTemplate(data) {
-    var template = '\n  <div class=\'menuItems games\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'>' + data.favorite + data.online + data.multiplayer + data.rating + data.platform + '</p>\n  </div>\n';
+    var template = '\n  <div class=\'menuItems games\'>\n    <p class=\'title\'>' + data.item + '</p><p class=\'price\'>' + data.price + '</p>\n  </div>\n  <div class=\'menuDetails\'>\n    <p class=\'description\'>' + data.description + '</p>\n    <div class=\'vertical\'></div>\n    <p class=\'icons\'><img src=\'images/favorite.png\' width=\'20px\' height=\'20px\'' + data.favorite + '><img src=\'images/online.png\' width=\'20px\' height=\'20px\'' + data.online + '><img src=\'images/multiplayer.png\' width=\'20px\' height=\'20px\'' + data.multiplayer + '><img src=\'images/rating.png\' width=\'20px\' height=\'20px\'' + data.rating + '><img src=\'images/platform.png\' width=\'20px\' height=\'20px\'' + data.platform + '></p>\n  </div>\n';
     $('.gameList').append(template);
   };
 })();
@@ -153,6 +153,7 @@ $('.header1').on('click', function () {
   $('.header2').removeClass('showBorder').addClass('noBorder');
   $('.header3').removeClass('showBorder').addClass('noBorder');
   $('.header4').removeClass('showBorder').addClass('noBorder');
+  $('.header5').removeClass('showBorder').addClass('noBorder');
 });
 
 $('.header2').on('click', function () {
@@ -160,6 +161,7 @@ $('.header2').on('click', function () {
   $('.header2').removeClass('noBorder').addClass('showBorder');
   $('.header3').removeClass('showBorder').addClass('noBorder');
   $('.header4').removeClass('showBorder').addClass('noBorder');
+  $('.header5').removeClass('showBorder').addClass('noBorder');
 });
 
 $('.header3').on('click', function () {
@@ -167,6 +169,7 @@ $('.header3').on('click', function () {
   $('.header2').removeClass('showBorder').addClass('noBorder');
   $('.header3').removeClass('noBorder').addClass('showBorder');
   $('.header4').removeClass('showBorder').addClass('noBorder');
+  $('.header5').removeClass('showBorder').addClass('noBorder');
 });
 
 $('.header4').on('click', function () {
@@ -174,4 +177,5 @@ $('.header4').on('click', function () {
   $('.header2').removeClass('showBorder').addClass('noBorder');
   $('.header3').removeClass('showBorder').addClass('noBorder');
   $('.header4').removeClass('noBorder').addClass('showBorder');
+  $('.header5').removeClass('showBorder').addClass('noBorder');
 });
