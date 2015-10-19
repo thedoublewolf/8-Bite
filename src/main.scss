@@ -259,6 +259,17 @@ header {
 	}
 }
 
+.foodHeader {
+	font-family: $lato;
+	color: $darkgrey;
+	width: 200px;
+	text-align: center;
+	margin-top: 18px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid $lightgrey;
+}
+
 .content {
 	@include outer-container(100%);
 	margin-top: 10px;
