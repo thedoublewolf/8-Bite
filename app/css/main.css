@@ -180,7 +180,8 @@ header {
     .content .tabContainer .headers {
       background: #fff;
       border-bottom: none;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: "Lato", sans-serif; }
     .content .tabContainer p {
       font-size: 14px;
       color: #3B3738; }
@@ -189,20 +190,25 @@ header {
       width: 135px;
       padding: 4px;
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      float: left;
+      text-align: center; }
     .content .tabContainer h2.header2 {
       color: #3B3738;
       width: 135px;
       padding: 4px;
       display: inline-block;
       margin: 0;
-      text-align: center; }
+      text-align: center;
+      float: left; }
     .content .tabContainer h2.header3 {
       color: #3B3738;
       width: 151px;
       padding: 4px;
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      float: left;
+      text-align: center; }
     .content .tabContainer h2.header4 {
       color: #3B3738;
       width: 135px;
@@ -210,6 +216,15 @@ header {
       display: inline-block;
       margin: 0;
       text-align: center; }
+    .content .tabContainer h2.header5 {
+      color: #3B3738;
+      width: 135px;
+      padding: 4px;
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+      position: absolute;
+      top: 821px; }
     .content .tabContainer h2:hover {
       color: #555051; }
     .content .tabContainer .open {
@@ -228,7 +243,8 @@ header {
       margin-right: 0; }
   .content .dinnerSelect {
     color: #454545;
-    font-style: italic; }
+    font-style: italic;
+    font-family: "Lato", sans-serif; }
   .content .beerList,
   .content .entreeList,
   .content .gameList {
@@ -238,6 +254,7 @@ header {
   .content .menuItems {
     display: flex; }
     .content .menuItems .title {
+      margin-top: 30px;
       font-size: 14px;
       font-weight: bold;
       white-space: nowrap;
@@ -246,13 +263,26 @@ header {
     .content .menuItems .title:after {
       content: '.........................................................................................................................................................................................'; }
     .content .menuItems .price {
-      flex-shrink: 0; }
+      flex-shrink: 0;
+      margin-top: 28px; }
   .content .menuLine {
     border: 1px solid #E0E0E0;
     margin-bottom: 0; }
   .content .menuLine2 {
     border: 3px solid #E0E0E0;
     margin-top: 2px; }
+  .content .menuDetails {
+    display: flex;
+    justify-content: space-between; }
+    .content .menuDetails .description {
+      display: inline; }
+    .content .menuDetails .vertical {
+      height: 40px;
+      width: 2px;
+      background: #E1E3DF;
+      display: inline-block; }
+    .content .menuDetails .icons {
+      display: inline; }
 
 #tab3 button {
   border: 2px solid #BBBBBB;
