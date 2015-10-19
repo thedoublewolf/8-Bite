@@ -97,8 +97,8 @@ $.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (ne
 
 //News popup
 
-var templateNews = $('#news').html();
-var render = _.template(templateNews);
+var templateNews2 = $('#news2').html();
+var render2 = _.template(templateNews2);
 
 $.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (news){
   $('.newsPopup').append(render (news));
@@ -209,7 +209,7 @@ $('.header4').on('click', function (){
     $('.header4').removeClass('noBorder').addClass('showBorder');
     $('.header5').removeClass('showBorder').addClass('noBorder');
   });
->>>>>>> 9fe83d9afbdcce3647d2ec8e2648434eea5aa6cd
+
 
 // Flickr API Key: 56d9a62afb8167b582f1fbc74496f12c
 
