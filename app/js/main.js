@@ -72,6 +72,15 @@
     $('.news').append(render(news));
   });
 
+  //News popup
+
+  var templateNews = $('#news').html();
+  var render = _.template(templateNews);
+
+  $.getJSON('https://json-data.herokuapp.com/restaurant/news/1').done(function (news) {
+    $('.newsPopup').append(render(news));
+  });
+
   // Special
 
   var specialURL = 'https://json-data.herokuapp.com/restaurant/special/1';

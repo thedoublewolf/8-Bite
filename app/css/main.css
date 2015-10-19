@@ -56,6 +56,44 @@ header {
   .banner img {
     width: 1000px; }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0; }
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1; }
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 800px;
+  position: relative;
+  transition: all 1s ease-in-out; }
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; }
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto; }
+
 .stuff {
   margin-top: 12px;
   max-width: 100%;
@@ -69,12 +107,13 @@ header {
     color: #3B3738;
     padding-left: 10px;
     padding-right: 10px;
-    overflow: scroll;
+    overflow: hidden;
+    position: relative;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
-    height: 235px;
+    max-height: 235px;
     background-color: #eeeeee;
     border: 1px solid #BBBBBB;
     border: 1px solid #BBBBBB; }
@@ -95,6 +134,26 @@ header {
       font-weight: bold; }
     .stuff .news .post {
       font-size: 0.8em; }
+    .stuff .news .read-more {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      padding: 30px 0;
+      background-image: linear-gradient(to bottom, transparent, #eeeeee); }
+    .stuff .news .readButton {
+      text-decoration: none;
+      border: 1px solid #E0E0E0;
+      padding: 10px;
+      background-color: white;
+      font-size: 0.7em;
+      font-weight: bold;
+      border-radius: 5px;
+      color: #3B3738; }
+    .stuff .news .button:hover {
+      color: #70686a; }
   .stuff .special {
     color: #3B3738;
     padding-left: 10px;
